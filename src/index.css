@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,300;0,400;0,700;1,400&family=Manrope:wght@300;400;600;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-headline: "Noto Serif", serif;
+  --font-body: "Manrope", sans-serif;
+  --font-label: "Manrope", sans-serif;
+
+  --color-primary: #000c1e;
+  --color-primary-container: #002344;
+  --color-on-primary: #ffffff;
+  --color-on-primary-container: #708bb2;
+
+  --color-surface: #f9f9f9;
+  --color-surface-dim: #dadada;
+  --color-surface-bright: #f9f9f9;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f3f3f3;
+  --color-surface-container: #eeeeee;
+  --color-surface-container-high: #e8e8e8;
+  --color-surface-container-highest: #e2e2e2;
+
+  --color-on-surface: #1a1c1c;
+  --color-on-surface-variant: #43474e;
+
+  --color-tertiary-fixed-dim: #e9c176;
+  --color-on-tertiary-container: #a78541;
+
+  --color-outline: #74777f;
+  --color-outline-variant: #c3c6cf;
+
+  --radius-sm: 0.125rem;
+  --radius-lg: 0.25rem;
+  --radius-xl: 0.5rem;
+  --radius-full: 9999px;
+}
+
+@layer base {
+  body {
+    @apply bg-surface text-on-surface font-body selection:bg-tertiary-fixed-dim selection:text-primary;
+  }
+}
+
+@layer utilities {
+  .editorial-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+}
