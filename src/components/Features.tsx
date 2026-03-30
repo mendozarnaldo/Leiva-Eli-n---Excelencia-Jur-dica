@@ -6,13 +6,13 @@ export default function Features() {
     {
       icon: <UserRoundSearch className="text-on-tertiary-container w-10 h-10" />,
       title: "Atención Personalizada",
-      description: "Cada caso es único. Proporcionamos un enfoque artesanal a la defensa de sus derechos.",
+      description: "Cada caso es único. Aseguramos un trato cercano y personal con el cliente, proporcionando un enfoque artesanal a la defensa de sus derechos.",
       bgColor: "bg-surface-container-low"
     },
     {
       icon: <Eye className="text-on-tertiary-container w-10 h-10" />,
       title: "Transparencia",
-      description: "Comunicación clara sobre los procesos y expectativas reales de cada litigio.",
+      description: "Comunicación clara y constante sobre tu proceso o asunto legal.",
       bgColor: "bg-surface-container"
     },
     {
@@ -34,10 +34,10 @@ export default function Features() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.2 }}
               viewport={{ once: true }}
-              className={`p-12 ${feature.bgColor} flex flex-col justify-between min-h-[320px]`}
+              className={`p-12 ${feature.bgColor} flex flex-col h-full`}
             >
               <div className="mb-8">{feature.icon}</div>
-              <div>
+              <div className="flex-grow">
                 <h3 className="font-headline text-2xl mb-4">{feature.title}</h3>
                 <p className="text-on-surface-variant leading-relaxed">{feature.description}</p>
               </div>

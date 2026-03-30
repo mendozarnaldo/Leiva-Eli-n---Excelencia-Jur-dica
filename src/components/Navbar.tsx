@@ -4,7 +4,7 @@ import { motion } from 'motion/react';
 export default function Navbar() {
   return (
     <header className="w-full top-0 sticky z-50 bg-surface/80 backdrop-blur-md transition-colors duration-300 border-b border-outline-variant/10">
-      <nav className="flex justify-between items-center max-w-7xl mx-auto px-8 py-6">
+      <nav className="flex justify-between items-center max-w-7xl mx-auto px-8 py-3">
         <motion.div 
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
@@ -13,8 +13,8 @@ export default function Navbar() {
         >
           <img 
             src="https://69c5fe16e3b8dec4aa3614f1.imgix.net/logo%20de%20leiva/WhatsApp%20Image%202026-03-26%20at%2012.13.23.jpeg" 
-            alt="Leiva Elián Logo" 
-            className="h-28 w-auto object-contain rounded-sm"
+            alt="Leiva Elian Logo" 
+            className="h-16 w-auto object-contain rounded-sm"
             referrerPolicy="no-referrer"
           />
         </motion.div>

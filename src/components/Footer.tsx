@@ -14,7 +14,7 @@ export default function Footer() {
             />
           </div>
           <p className="text-on-primary/60 font-body text-sm leading-relaxed max-w-xs">
-            Brindando soluciones legales con la precisión y el compromiso que su caso merece. Excelencia jurídica desde 2020.
+            Brindando soluciones legales con la precisión y el compromiso que su caso merece.
           </p>
         </div>
 
@@ -58,7 +58,7 @@ export default function Footer() {
             </a>
           </div>
           <p className="text-on-primary/40 font-label text-[0.7rem] uppercase tracking-[0.2em] md:text-right">
-            © 2026 Leiva Elián. Excelencia Jurídica.
+            © 2026 Leiva Elian. Excelencia Jurídica.
           </p>
         </div>
       </div>
